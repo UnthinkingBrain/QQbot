@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  dorm-bot:
+    build: .
+    container_name: dorm-bot
+    environment:
+      WS_URL: "ws://10.70.210.49:3001/?access_token=Y15055724418yang"
+      DEEPSEEK_API_KEY: "sk-dab127c60046464a851e703ebc5b0ffd"
+    restart: always
